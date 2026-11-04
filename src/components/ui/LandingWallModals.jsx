@@ -28,116 +28,191 @@ export default function LandingWallModals() {
         onClick={(e) => e.stopPropagation()}
       >
         {/* ======================================================== */}
-        {/* MODAL 1: RESUME & CREDENTIALS EXPLANATION                */}
+        {/* MODAL 1: NARAYAN RAKHECHA'S OFFICIAL RESUME              */}
         {/* ======================================================== */}
         {activeWallModal === 'resume' && (
-          <>
-            <header className="sketch-modal-header">
-              <div className="header-meta">
-                <span className="sketch-tape-tag">EXECUTIVE DOSSIER // CURRICULUM VITAE</span>
-                <h2 className="modal-title">How to Read Narayan's Resume</h2>
-                <p className="modal-sub">
-                  {candidate?.role || 'Quantitative Dev & AI Engineer'} • Targeting{' '}
-                  <strong>{candidate?.targetRole || 'Wispr Flow India'}</strong>
+          <div className="official-resume-document">
+            {/* Action Bar Header */}
+            <div className="resume-action-bar">
+              <span className="resume-sheet-tag">OFFICIAL RESUME // CURRICULUM VITAE</span>
+              <div className="resume-action-buttons">
+                <a
+                  href="/Narayan_Rakhecha_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="resume-action-btn pdf-btn"
+                  title="Open original PDF in new tab"
+                >
+                  📄 View / Download PDF
+                </a>
+                <button
+                  type="button"
+                  className="sketch-modal-close"
+                  onClick={closeWallModal}
+                  aria-label="Close modal"
+                >
+                  ✕
+                </button>
+              </div>
+            </div>
+
+            {/* Document Sheet */}
+            <div className="resume-sheet-paper">
+              {/* Header */}
+              <header className="resume-doc-header">
+                <h1 className="resume-name">NARAYAN RAKHECHA</h1>
+                <div className="resume-contact-line">
+                  <span>Nashik, India</span>
+                  <span className="sep">|</span>
+                  <a href="mailto:narayanrakhechaau@gmail.com">narayanrakhechaau@gmail.com</a>
+                  <span className="sep">|</span>
+                  <a href="tel:+918999392326">+91 8999392326</a>
+                  <span className="sep">|</span>
+                  <a href="https://linkedin.com/in/narayan-rakhecha" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <span className="sep">|</span>
+                  <a href="https://github.com/GodSpeedn" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+                <div className="resume-sub-status">
+                  Available immediately; flexible for April–August 2027 cohort start
+                </div>
+              </header>
+
+              {/* SUMMARY */}
+              <section className="resume-section">
+                <h2 className="resume-section-title">SUMMARY</h2>
+                <p className="resume-summary-text">
+                  AI product builder with a B.CompSci (AI &amp; Big Data). Led a team of 5 students through a 10-month multi-agent LLM platform build with weekly sponsor reviews, led 10+ team projects, and ran consumer growth campaigns. Top scorer in QuantInsti EPAT Batch 68. Looking to build AI products people actually need.
                 </p>
-              </div>
-              <button
-                type="button"
-                className="sketch-modal-close"
-                onClick={closeWallModal}
-                aria-label="Close modal"
-              >
-                ✕
-              </button>
-            </header>
+              </section>
 
-            <div className="sketch-modal-body">
-              {/* Quick Contact Bar */}
-              <div className="modal-contact-strip">
-                <span>📍 {candidate?.location || 'Sydney / Remote'}</span>
-                <a href={`mailto:${candidate?.email}`}>✉️ {candidate?.email}</a>
-                <a href={`tel:${candidate?.phone}`}>📞 {candidate?.phone}</a>
-                <a href={candidate?.linkedin} target="_blank" rel="noopener noreferrer">
-                  🔗 LinkedIn
-                </a>
-                <a href={candidate?.github} target="_blank" rel="noopener noreferrer">
-                  💻 GitHub
-                </a>
-              </div>
+              {/* PRODUCT MANAGEMENT & LEADERSHIP EXPERIENCE */}
+              <section className="resume-section">
+                <h2 className="resume-section-title">PRODUCT MANAGEMENT &amp; LEADERSHIP EXPERIENCE</h2>
 
-              {/* Headline Metrics Grid */}
-              <div className="modal-metrics-grid">
-                {(candidate?.metrics || []).slice(0, 4).map((m, idx) => (
-                  <div key={idx} className="metric-box">
-                    <span className="m-val">{m.value}</span>
-                    <span className="m-lbl">{m.label}</span>
-                    <span className="m-ctx">{m.context}</span>
+                <div className="resume-job-block">
+                  <div className="job-row-top">
+                    <span className="job-title-inst"><strong>AI Product Lead &amp; Research Intern</strong>, University of Wollongong</span>
+                    <span className="job-dates">Jan – Oct 2025</span>
                   </div>
-                ))}
-              </div>
+                  <ul className="resume-bullets">
+                    <li>Owned vision, roadmap, and PRDs for a multi-agent AI platform that helps developers go from a plain-language request to working code; led a 5-student team through Agile sprints across a 10-month project.</li>
+                    <li>Ran two stakeholder meetings per week with the faculty sponsor and managed delivery day to day, reducing manual operational work by an estimated 30%.</li>
+                    <li>Directed the design and AI-assisted development of cross-model communication between Gemini and OpenAI models, coordinating the team to deliver multi-agent workflows that automated 5+ end-to-end processes.</li>
+                    <li>Presented a live demo of the prototype at a university tech expo attended by 200+ students; received technical review feedback from the sponsor.</li>
+                  </ul>
+                </div>
 
-              {/* Career Experience & Leadership */}
-              <section className="modal-content-section">
-                <h4 className="section-title">Career Experience &amp; Pod Leadership</h4>
-                <div className="resume-timeline-list">
-                  {(resumeFacts || []).map((fact, idx) => (
-                    <article key={idx} className="timeline-entry">
-                      <div className="entry-head">
-                        <div>
-                          <strong>{fact.title}</strong>
-                          <span className="entry-inst"> — {fact.institution}</span>
-                        </div>
-                        <span className="entry-date">{fact.period}</span>
-                      </div>
-                      <p className="entry-body">{fact.description}</p>
-                      {fact.skills && (
-                        <div className="skill-tags">
-                          {fact.skills.map((s, sIdx) => (
-                            <span key={sIdx} className="skill-pill">
-                              {s}
-                            </span>
-                          ))}
-                        </div>
-                      )}
-                    </article>
-                  ))}
+                <div className="resume-job-block">
+                  <div className="job-row-top">
+                    <span className="job-title-inst"><strong>Product Strategy &amp; Marketing Intern</strong>, Kratos Energy, Wollongong</span>
+                    <span className="job-dates">Oct – Dec 2024</span>
+                  </div>
+                  <ul className="resume-bullets">
+                    <li>Used user and market data to target consumer prospects and run cold-lead campaigns, lifting qualified leads by 25%.</li>
+                  </ul>
+                </div>
+
+                <div className="resume-job-block">
+                  <div className="job-row-top">
+                    <span className="job-title-inst"><strong>Cyber Security Intern</strong>, Work Ventures, Sydney</span>
+                    <span className="job-dates">Oct – Dec 2023</span>
+                  </div>
+                  <ul className="resume-bullets">
+                    <li>Learned common attack methods and helped run a simulated attack on employees to test their compliance with company security rules.</li>
+                  </ul>
+                </div>
+
+                <div className="resume-job-block">
+                  <div className="job-row-top">
+                    <span className="job-title-inst"><strong>Team Lead, University Group Projects</strong>, University of Wollongong</span>
+                    <span className="job-dates">2022 – 2025</span>
+                  </div>
+                  <ul className="resume-bullets">
+                    <li>Led teams of 4–5 on 10+ subject and group projects, owning planning, task allocation, and final presentations.</li>
+                  </ul>
+                </div>
+
+                <div className="resume-job-block">
+                  <div className="job-row-top">
+                    <span className="job-title-inst"><strong>Member</strong>, UOW Quant Club</span>
+                    <span className="job-dates">2023 – 2025</span>
+                  </div>
+                  <ul className="resume-bullets">
+                    <li>Drove outreach for the SIG UNSW Algothon, promoting the Sydney tournament to students and signing peers up to compete.</li>
+                  </ul>
                 </div>
               </section>
 
-              {/* Education & Algorithmic Trading Certification */}
-              <section className="modal-content-section">
-                <h4 className="section-title">Education &amp; Quantitative Training</h4>
-                <div className="edu-cards-grid">
-                  <div className="edu-card">
-                    <h5>Bachelor of Computer Science</h5>
-                    <p>Major in Artificial Intelligence &amp; Big Data • Minor in Finance</p>
-                    <small>University of Wollongong, Australia | 2023 – 2026</small>
+              {/* PROJECTS */}
+              <section className="resume-section">
+                <h2 className="resume-section-title">PROJECTS</h2>
+
+                <div className="resume-job-block">
+                  <div className="job-row-top">
+                    <span className="job-title-inst"><strong>Multi-Agent AI Platform &amp; Code Generation System</strong></span>
+                    <span className="project-tech">FastAPI · React/TypeScript · Python</span>
                   </div>
-                  <div className="edu-card">
-                    <h5>Executive Program in Algorithmic Trading (EPAT)</h5>
-                    <p>Options Pricing (Black-Scholes), Volatility Surfaces, Monte Carlo &amp; Stat-Arb</p>
-                    <small>QuantInsti | 2025 – 2026</small>
+                  <ul className="resume-bullets">
+                    <li>Led the AI-assisted build of a prototype where agents running on local and cloud LLMs (Gemini, OpenAI) collaborate to generate code from a plain-language request, with a FastAPI backend, a React/TypeScript UI, and automated GitHub commits.</li>
+                    <li>Demoed it at the university tech expo, then paused development because it didn’t show enough traction to justify continuing, a lesson in validating user need before building further.</li>
+                  </ul>
+                </div>
+
+                <div className="resume-job-block">
+                  <div className="job-row-top">
+                    <span className="job-title-inst"><strong>Options Volatility Smile Trading Strategy</strong></span>
+                    <span className="project-tech">Python · NumPy · Pandas · SciPy</span>
                   </div>
+                  <ul className="resume-bullets">
+                    <li>Computed implied volatility for SPY options using Black-Scholes and Brent’s method, then fitted a cubic-spline fair-value curve to the volatility smile to flag options that look cheap or expensive versus their neighbors.</li>
+                    <li>Turned the signal into a mean-reversion strategy (long/short butterflies when the IV-spread z-score exceeds 1.5σ), backtested on 2017–2018 data; a standard relative-value approach in options trading.</li>
+                  </ul>
+                </div>
+              </section>
+
+              {/* COMPETITIONS & ACHIEVEMENTS */}
+              <section className="resume-section">
+                <h2 className="resume-section-title">COMPETITIONS &amp; ACHIEVEMENTS</h2>
+                <ul className="resume-bullets">
+                  <li>QuantInsti EPAT Batch 68: Top scorer, recognized at Convocation 2026.</li>
+                  <li>Susquehanna Australia &amp; NZ Poker Showdown (Jul 2025): Top 30 of 100 finalists, from 1,000+ qualifiers.</li>
+                  <li>SIG UNSW Algothon (2025): 18th of 400+ (solo) | IMC Prosperity 4 (2026): #284 in Australia after Round 2 (solo).</li>
+                </ul>
+              </section>
+
+              {/* EDUCATION */}
+              <section className="resume-section">
+                <h2 className="resume-section-title">EDUCATION</h2>
+                <div className="resume-edu-list">
+                  <div className="job-row-top">
+                    <span className="job-title-inst"><strong>Master of Science in Financial Engineering</strong>, WorldQuant University (online, in progress)</span>
+                    <span className="job-dates">Started Nov 2026</span>
+                  </div>
+                  <div className="job-row-top">
+                    <span className="job-title-inst"><strong>QuantInsti</strong>, Executive Program in Algorithmic Trading (EPAT)</span>
+                    <span className="job-dates">Mar 2026</span>
+                  </div>
+                  <div className="job-row-top">
+                    <span className="job-title-inst"><strong>University of Wollongong</strong>, Bachelor of Computer Science (AI &amp; Big Data)</span>
+                    <span className="job-dates">Dec 2025</span>
+                  </div>
+                  <div className="job-row-top">
+                    <span className="job-title-inst"><strong>University of Wollongong</strong>, Diploma of Information Technology</span>
+                    <span className="job-dates">Dec 2023</span>
+                  </div>
+                </div>
+              </section>
+
+              {/* SKILLS */}
+              <section className="resume-section">
+                <h2 className="resume-section-title">SKILLS</h2>
+                <div className="resume-skills-block">
+                  <p><strong>Product:</strong> Agile/Scrum, PRDs, roadmapping, user research, stakeholder management.</p>
+                  <p><strong>Technical:</strong> Python, SQL, Git, data analysis, 150+ LeetCode problems (Java, Python).</p>
                 </div>
               </section>
             </div>
-
-            <footer className="sketch-modal-footer">
-              <a
-                href={`mailto:${candidate?.email}?subject=Interview%20Invitation%20-%20Wispr%20Flow%20India`}
-                className="sketch-btn-secondary"
-              >
-                ✉️ Send Direct Email
-              </a>
-              <button
-                type="button"
-                className="sketch-btn-primary"
-                onClick={() => window.print()}
-              >
-                🖨️ Print / Save PDF
-              </button>
-            </footer>
-          </>
+          </div>
         )}
 
         {/* ======================================================== */}
