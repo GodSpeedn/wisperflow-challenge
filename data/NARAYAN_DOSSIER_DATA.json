@@ -1,0 +1,302 @@
+{
+  "profile": {
+    "name": "Narayan Rakhecha",
+    "role": "Growth & Distribution Strategist",
+    "targetRole": "Wispr Flow — India Growth Team",
+    "email": "narayanrakhechaau@gmail.com",
+    "phone": "+91 8999392326",
+    "location": "Nashik / Sydney / Bengaluru",
+    "linkedin": "https://www.linkedin.com/in/narayan-rakhecha-1a065a278",
+    "github": "https://github.com/GodSpeedn",
+    "youtube": "https://youtube.com/@narayanrakhecha2376",
+    "summary": "Technical growth strategist combining computer science foundations, quantitative rigor, and B2B acquisition hustle.",
+    "metrics": [
+      { "label": "SIG Algothon", "value": "18th / 400+", "detail": "Top 5% Solo Quant Trader" },
+      { "label": "AI Team Leadership", "value": "5 AI Devs", "detail": "Multi-agent LLM systems (-30% time)" },
+      { "label": "IMC Prosperity 4", "value": "~284 / 1,000+", "detail": "Market-making & Stat-Arb" },
+      { "label": "Degree", "value": "B.CompSc (AI/Big Data)", "detail": "Univ. of Wollongong • Minor Finance" }
+    ]
+  },
+  "videoPitch": {
+    "title": "Wispr Flow India Distribution Strategy",
+    "headline": "Why Narayan Rakhecha for Wispr Flow India",
+    "duration": "3:00",
+    "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "hook": "Talking is no longer a rough draft. It is the final product.",
+    "takeaways": [
+      "B2B keyboard replacement across Bengaluru & Gurgaon tech hubs",
+      "Tier-1 hackathon blitzkrieg across IITs & BITS Pilani",
+      "High-velocity technical creator pipelines with 0-edit live voice demos"
+    ]
+  },
+  "careerMilestones": [
+    {
+      "id": 1,
+      "stage": "01 // Nashik Roots",
+      "period": "Early Years",
+      "location": "Nashik, India",
+      "badge": "Genesis",
+      "title": "Self-Engineered Technical Curiosity",
+      "story": "Grew up in Nashik with an early passion for breaking down hardware and writing erratic automation scripts. Realized code was the ultimate borderless lever.",
+      "challenge": "Zero local tech startup ecosystem or senior tech mentors.",
+      "pivot": "Self-engineered curriculum in competitive programming and systems design, targeting top global universities.",
+      "proof": "Olympiad finalist & accepted into Univ. of Wollongong CS."
+    },
+    {
+      "id": 2,
+      "stage": "02 // Sydney Leap",
+      "period": "2023 – 2025",
+      "location": "Univ. of Wollongong, Australia",
+      "badge": "Academic Rigor",
+      "title": "Dual CS (AI & Big Data) + Finance Minor",
+      "story": "Relocated to Australia independently. Mastered distributed algorithms, machine learning pipelines, and quantitative finance theory while adapting to global standards.",
+      "challenge": "Balancing high-rigor technical academics with living alone in Sydney/Wollongong.",
+      "pivot": "Combined CS with executive quantitative finance training (QuantInsti EPAT).",
+      "proof": "Distinction average across advanced algorithms & systems."
+    },
+    {
+      "id": 3,
+      "stage": "03 // Security Research",
+      "period": "2024",
+      "location": "WorkVentures, Sydney",
+      "badge": "Ecosystem Research",
+      "title": "Enterprise Risk Mitigation & Systems Research",
+      "story": "Researched 15 emerging tech ecosystems and distilled technical risk assessment reports for SMEs, analyzing vulnerability patterns and compliance requirements.",
+      "challenge": "Translating dense technical vulnerability feeds into high-stakes executive summaries.",
+      "pivot": "Developed structured automated briefing templates for fast non-technical digestion.",
+      "proof": "Evaluated 15 emerging infrastructure stacks."
+    },
+    {
+      "id": 4,
+      "stage": "04 // Top-of-Funnel Hustle",
+      "period": "Oct – Dec 2024",
+      "location": "Kratos Energy, Wollongong",
+      "badge": "Growth Hustle",
+      "title": "B2B Outbound Lead Generation Pipeline",
+      "story": "Managed full-cycle cold outbound lead pipelines, running structured email campaigns and direct client outreach to drive top-of-funnel customer acquisition.",
+      "challenge": "Low response rates from traditional corporate email templates.",
+      "pivot": "Re-engineered outbound copy with hyper-personalized value hooks and quantitative ROI proofs.",
+      "proof": "Built repeatable cold acquisition funnel for commercial accounts."
+    },
+    {
+      "id": 5,
+      "stage": "05 // LLM Orchestration",
+      "period": "Jan – Oct 2025",
+      "location": "Univ. of Wollongong",
+      "badge": "AI Leadership",
+      "title": "Led 5-Dev Multi-Agent AI Pod",
+      "story": "Architected an autonomous Multi-Agent AI system with LLM orchestration (Gemini, OpenAI), coordinating agent task delegation and pipeline automation.",
+      "challenge": "High latency and cascading agent hallucination in multi-step workflows.",
+      "pivot": "Implemented strict prompt contracts and structured JSON validator nodes.",
+      "proof": "Reduced manual processing time by 30% with 5 engineers led."
+    },
+    {
+      "id": 6,
+      "stage": "06 // Quant Discipline",
+      "period": "Jun – Aug 2025",
+      "location": "SIG UNSW Algothon & IMC",
+      "badge": "Probabilistic Edge",
+      "title": "SIG Algothon 18th / 400+ Solo & IMC Prosperity",
+      "story": "Competed solo against 400+ quants and collegiate teams in the SIG UNSW Algothon. Built automated pair-trading and statistical arbitrage models under real-time market pressure.",
+      "challenge": "Solo execution against coordinated teams of 3–4 math specialists.",
+      "pivot": "Prioritized dynamic position sizing, automated stop-losses, and low-drawdown pair cointegration.",
+      "proof": "Ranked 18th solo (Top 5%) + Rank ~284 in IMC Prosperity."
+    },
+    {
+      "id": 7,
+      "stage": "07 // Technical Media & Demos",
+      "period": "Ongoing",
+      "location": "Technical Systems Demos & Architecture",
+      "badge": "Technical Media",
+      "title": "Multi-Agent AI & Quant System Demonstrations",
+      "story": "Produce and publish technical project breakdowns; demonstrating Multi-Agent AI systems, algorithmic trading backtests, and NEAT neural network simulations.",
+      "challenge": "High drop-off rates within the first 15 seconds of dense technical code demonstrations.",
+      "pivot": "Engineered high-velocity visual hook formulas and animated architectural mental models.",
+      "proof": "Demonstrated ability to deconstruct complex technical systems into engaging visual narratives."
+    }
+  ],
+  "growthPlaybook": {
+    "mission": "Talking is no longer a rough draft. It’s the final product.",
+    "corePsychologicalUnlock": {
+      "title": "The Cognitive Velocity Gap",
+      "statement": "Keyboards are the single greatest bottleneck of modern intellect. The average human thinks at 400+ WPM, speaks at 160 WPM, but types at a sluggish 40 WPM.",
+      "challenge": "Indian knowledge workers view speech-to-text as sloppy Siri dictation or a rough audio note.",
+      "unlock": "Position Wispr Flow as an executive-grade neural drafting engine: you speak naturally, and Wispr formats it instantly into polished Slack messages, Linear tickets, or PRDs with zero editing."
+    },
+    "velocityStats": {
+      "typingWpm": 40,
+      "wisprWpm": 160,
+      "timeSavedPerDay": "42 mins",
+      "velocityMultiplier": "3.8x"
+    },
+    "pillars": [
+      {
+        "id": "pillar-hackathons",
+        "number": "01",
+        "tag": "Developer Grassroots",
+        "title": "The Tier-1 Engineering Hackathon Sprint",
+        "target": "25+ Premier Engineering Campuses (IIT Bombay, IIT Delhi, BITS Pilani)",
+        "thesis": "Developers hate writing documentation and commit messages. Embed Wispr Flow into high-intensity 36-hour hackathons as the mandatory builder secret weapon.",
+        "tactics": [
+          "Sponsor 'Fastest PRD by Voice' speedrun challenges with instant bounties.",
+          "Provide dedicated Wispr Flow API / Desktop licenses to all finalists.",
+          "Campus ambassadors in top coding clubs converting 5,000+ high-conviction devs into lifelong power users."
+        ],
+        "kpi": "45% 30-day retention among participating campus developers."
+      },
+      {
+        "id": "pillar-creators",
+        "number": "02",
+        "tag": "Viral Workflow Distribution",
+        "title": "The Technical Creator Pipeline",
+        "target": "Tech Twitter / X, YouTube Coders, Productivity Creators",
+        "thesis": "Don't sponsor generic lifestyle creators. Sponsor technical workflow videos demonstrating real-time coding, doc writing, and prompt engineering by voice.",
+        "tactics": [
+          "Zero-edit challenge: Creators build a full feature or document an entire codebase using only voice.",
+          "Split-screen comparison shorts: Typing vs Wispr Flow side-by-side hitting 1M+ organic impressions.",
+          "Affiliate rev-share loop specifically tailored for Indian indie hackers and freelancers."
+        ],
+        "kpi": "Sub-$8 customer acquisition cost (CAC) through creator distribution."
+      },
+      {
+        "id": "pillar-b2b",
+        "number": "03",
+        "tag": "High-Value Enterprise",
+        "title": "B2B Keyboard Replacement Trials",
+        "target": "Fast-growing startups across Bengaluru (Indiranagar/HSR) and Gurgaon",
+        "thesis": "Target product managers, engineering leads, and startup founders who spend 5+ hours daily typing Slack messages and tickets.",
+        "tactics": [
+          "White-glove 14-day team onboarding for 20-50 member tech startups.",
+          "Native Linear, Slack, and Notion command templates pre-configured for India teams.",
+          "Quantified productivity dashboard showing hours saved across engineering pods."
+        ],
+        "kpi": "65% team pilot-to-paid annual seat conversion rate."
+      }
+    ],
+    "funnelStrategy": [
+      { "step": "Top of Funnel (Awareness)", "metric": "10M Impressions", "action": "Creator challenges & TikTok/Reels short-form speech demos." },
+      { "step": "Middle of Funnel (Activation)", "metric": "45,000 Activations", "action": "Instant browser trial + Hackathon developer licenses." },
+      { "step": "Bottom of Funnel (Retention)", "metric": "35% MoM Retention", "action": "System hotkey habit triggers + Daily streak gamification." },
+      { "step": "Enterprise Expansion", "metric": "150+ Companies", "action": "Slack & Notion team licenses with centralized billing." }
+    ]
+  },
+  "twoTruthsAndLie": {
+    "rounds": [
+      {
+        "id": 1,
+        "category": "Execution & Hustle",
+        "options": [
+          { "text": "Built cold B2B outbound pipelines and direct client acquisition at an energy firm.", "isLie": false, "backstory": "TRUE: At Kratos Energy, built the outbound email infrastructure and managed cold lead funnels." },
+          { "text": "Led a team of 5 engineers to architect an LLM multi-agent framework.", "isLie": false, "backstory": "TRUE: Led an AI research team at Univ. of Wollongong reducing manual pipeline time by 30%." },
+          { "text": "Built an automated trading bot that liquidated my entire account in 4 minutes.", "isLie": true, "backstory": "LIE: Automated risk controls and strict stop-losses prevented account blowups during quantitative testing!" }
+        ]
+      },
+      {
+        "id": 2,
+        "category": "Quantitative Edge",
+        "options": [
+          { "text": "Placed 18th out of 400+ competitors working completely solo in the SIG UNSW Algothon.", "isLie": false, "backstory": "TRUE: Achieved top 5% solo rank competing against multi-member teams using statistical arbitrage." },
+          { "text": "Ranked in the top 300 in the global IMC Prosperity 4 algorithmic trading challenge.", "isLie": false, "backstory": "TRUE: Competed in market making and inventory control across multiple algorithmic rounds." },
+          { "text": "Co-founded a Web3 meme token that hit a $10M market cap.", "isLie": true, "backstory": "LIE: Purely focused on quantitative math, statistical arbitrage, and AI systems—no meme coins!" }
+        ]
+      },
+      {
+        "id": 3,
+        "category": "Distribution & Grit",
+        "options": [
+          { "text": "Built and published technical video demos on YouTube covering Multi-Agent AI systems and quant trading.", "isLie": false, "backstory": "TRUE: Produced hands-on demos covering Multi-Agent AI teams, quant algorithmic backtesting, and NEAT AI." },
+          { "text": "Conducted enterprise risk mitigation research across 15 emerging tech stacks.", "isLie": false, "backstory": "TRUE: At WorkVentures, distilled technical security reports for commercial SMEs." },
+          { "text": "Learned Python in 48 hours to pass a live algorithmic coding interview.", "isLie": true, "backstory": "LIE: Python proficiency was forged through years of coursework, algorithmic trading, and ML libraries!" }
+        ]
+      },
+      {
+        "id": 4,
+        "category": "Convictions & Wispr Flow",
+        "options": [
+          { "text": "Believe speech dictation in India will expand 10x faster among developers than writers.", "isLie": false, "backstory": "TRUE: Developers face the highest keyboard fatigue writing PRDs, tickets, and docs all day." },
+          { "text": "Prepared a complete 30-60-90 day India rollout roadmap before even receiving an interview.", "isLie": false, "backstory": "TRUE: The Wispr Flow India Playbook here is the live proof of proactive execution." },
+          { "text": "Prefer typing on a mechanical keyboard over speaking with zero latency.", "isLie": true, "backstory": "LIE: Voice is 3x faster than mechanical keys—frictionless neural voice is the clear future!" }
+        ]
+      }
+    ]
+  },
+  "aiTwin": {
+    "quickPrompts": [
+      "Why Wispr Flow?",
+      "Explain your B2B lead-gen work",
+      "What is your unfair advantage in growth?",
+      "How do we contact you?"
+    ],
+    "responses": {
+      "why wispr flow": "Wispr Flow solves the single biggest bottleneck in knowledge work: the cognitive velocity gap. We think at 400+ WPM, speak at 160 WPM, and type at 40 WPM. In India's hyper-dense developer and startup ecosystem (Bengaluru, Gurgaon), voice dictation that writes final-draft code and prose is a massive unfair advantage. I want to build the distribution engine that makes Wispr Flow the default tool on every Indian builder's laptop.",
+      "lead-gen": "At Kratos Energy, I owned the outbound acquisition funnel. I engineered cold email infrastructure, refined copy hooks to spike open rates, and handled direct client calls to convert top-of-funnel leads into pipeline meetings. I bring that same relentless outbound hustle to acquiring Wispr Flow enterprise pilots and campus partners.",
+      "unfair advantage": "My unfair advantage is the convergence of technical computer science depth, quantitative trading rigor, and creator distribution instincts. I don't just write marketing copy; I build multi-agent LLM systems, understand statistical data down to the variance, and know how to hook an audience on YouTube and LinkedIn.",
+      "contact": "You can reach me directly via email at narayanrakhechaau@gmail.com, call me at +91 8999392326, or connect on LinkedIn. I am based in India and ready to execute immediately for Wispr Flow."
+    },
+    "fallbackResponse": "I am Narayan's AI Twin. My core conviction is that high-velocity distribution combines quantitative experimentation with relentless outbound hustle. Try asking me about my SIG Algothon solo rank, my 5-engineer AI leadership, or my 3-pillar India playbook for Wispr Flow!"
+  },
+  "plainResume": {
+    "education": [
+      {
+        "degree": "Bachelor of Computer Science (AI & Big Data, Minor Finance)",
+        "school": "University of Wollongong",
+        "period": "2023 – 2026",
+        "highlights": "Advanced Data Structures, Deep Learning, Distributed Systems, Quantitative Finance"
+      },
+      {
+        "degree": "Executive Programme in Algorithmic Trading (EPAT)",
+        "school": "QuantInsti",
+        "period": "2024 – 2025",
+        "highlights": "Options Pricing, Black-Scholes, Volatility Arbitrage, Monte Carlo Sim"
+      }
+    ],
+    "experience": [
+      {
+        "role": "AI Research Intern (Team Lead)",
+        "company": "University of Wollongong",
+        "period": "Jan – Oct 2025",
+        "bullets": [
+          "Led a 5-member engineering team to design and deploy a Multi-Agent AI System using LLM orchestration (Gemini, OpenAI).",
+          "Reduced manual task-processing time by 30% through automated agent collaboration and prompt validation.",
+          "Implemented benchmark evaluation metrics to ensure sub-second response reliability."
+        ]
+      },
+      {
+        "role": "Marketing & Growth Intern",
+        "company": "Kratos Energy, Wollongong",
+        "period": "Oct – Dec 2024",
+        "bullets": [
+          "Spearheaded B2B outbound lead generation campaigns across commercial sectors.",
+          "Constructed cold outbound email sequences and performed direct qualification calls.",
+          "Streamlined CRM pipeline tracking and increased qualified prospect booking rates."
+        ]
+      },
+      {
+        "role": "Cybersecurity & Technology Research",
+        "company": "WorkVentures, Sydney",
+        "period": "2024",
+        "bullets": [
+          "Researched 15 emerging tech ecosystems and formulated security compliance briefs for SMEs.",
+          "Synthesized vulnerability matrices into executive-ready risk mitigation reports."
+        ]
+      }
+    ],
+    "competitions": [
+      {
+        "name": "SIG UNSW Algothon 2025",
+        "rank": "18th / 400+ Solo (Top 5%)",
+        "details": "Engineered automated statistical arbitrage & pair-trading algorithms on high-frequency OHLC data with dynamic position sizing."
+      },
+      {
+        "name": "IMC Prosperity 4 Global Challenge",
+        "rank": "Rank ~284 / 1,000+ Teams",
+        "details": "Constructed Python market-making and inventory-risk management algorithms across multi-round trading simulations."
+      }
+    ],
+    "skills": {
+      "growth": ["B2B Outbound", "Lead Generation", "Productivity Loops", "Campus Hackathon Organizing", "Creator Marketing"],
+      "technical": ["Python", "JavaScript / React", "Three.js / WebGL", "LLM Orchestration", "Prompt Systems", "Git", "SQL"],
+      "quant": ["Statistical Arbitrage", "Pair Trading", "Risk Management", "Time-Series Analysis"]
+    }
+  }
+}

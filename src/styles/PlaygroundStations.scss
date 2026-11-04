@@ -1,0 +1,624 @@
+// =============================================================================
+// 🎪 THE PLAYGROUND STATIONS STYLING (Door 4)
+// Matches hand-drawn warm papercraft identity: #faf8f5, charcoal borders #1a1a1a
+// =============================================================================
+
+.station-html-wrapper {
+  pointer-events: auto !important;
+  user-select: auto !important;
+  transform-origin: center center;
+}
+
+// -----------------------------------------------------------------------------
+// 1. AI NARAYAN STATION
+// -----------------------------------------------------------------------------
+.ai-station-card {
+  width: 580px;
+  min-height: 460px;
+  max-height: 520px;
+  background: #faf8f5;
+  background-image: 
+    radial-gradient(#e8e1d5 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(247, 243, 235, 0.95));
+  background-size: 20px 20px, 100% 100%;
+  border: 2.5px solid #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 6px 0 #1a1a1a, 0 12px 28px rgba(0, 0, 0, 0.18);
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1a1a1a;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &.focused {
+    box-shadow: 0 8px 0 #1a1a1a, 0 16px 36px rgba(0, 0, 0, 0.24);
+  }
+
+  .ai-station-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 12px;
+    border-bottom: 2px dashed #d1c7b7;
+
+    .avatar-chip {
+      position: relative;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      border: 2px solid #1a1a1a;
+      overflow: hidden;
+      background: #fff;
+      flex-shrink: 0;
+
+      .narayan-avatar-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .live-dot {
+        position: absolute;
+        bottom: 2px;
+        right: 2px;
+        width: 11px;
+        height: 11px;
+        background: #10b981;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
+      }
+    }
+
+    .header-text {
+      flex: 1;
+
+      .station-badge {
+        font-family: 'Cabin Sketch', cursive, sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        color: #8b5e34;
+        text-transform: uppercase;
+      }
+
+      .station-title {
+        margin: 2px 0 0 0;
+        font-family: 'Cabin Sketch', cursive, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        color: #111;
+        line-height: 1.1;
+      }
+
+      .station-subtitle {
+        margin: 2px 0 0 0;
+        font-size: 11.5px;
+        color: #665c49;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .chat-body-scroll {
+    flex: 1;
+    overflow-y: auto;
+    max-height: 220px;
+    margin: 10px 0 8px 0;
+    padding: 12px 16px;
+    background: #fffdfa;
+    border: 1.5px solid #2a2a2a;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #c8bdab;
+      border-radius: 3px;
+    }
+
+    .topic-title-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      color: #92400e;
+      background: #fef3c7;
+      border: 1px solid #d97706;
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .chat-bubble {
+      font-size: 13px;
+      line-height: 1.55;
+      color: #222;
+
+      .chat-paragraph {
+        margin: 0 0 8px 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        strong {
+          color: #0f172a;
+          font-weight: 700;
+        }
+
+        .list-line {
+          display: block;
+          margin-left: 6px;
+          margin-top: 2px;
+          color: #334155;
+        }
+      }
+
+      .typewriter-cursor {
+        display: inline-block;
+        font-weight: bold;
+        color: #ea580c;
+        animation: blink 0.8s infinite;
+      }
+    }
+
+    .skip-hint {
+      margin-top: 6px;
+      font-size: 10px;
+      color: #9ca3af;
+      font-style: italic;
+      text-align: right;
+    }
+  }
+
+  .prompt-chips-wrapper {
+    margin-top: 4px;
+
+    .chips-label {
+      font-family: 'Cabin Sketch', cursive, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      color: #6b7280;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+
+    .chips-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      max-height: 68px;
+      overflow-y: auto;
+
+      .prompt-chip-btn {
+        background: #f4ede2;
+        border: 1.5px solid #1a1a1a;
+        border-radius: 20px;
+        padding: 4px 9px;
+        font-size: 11px;
+        font-weight: 600;
+        color: #1a1a1a;
+        cursor: pointer;
+        transition: all 0.15s ease;
+        white-space: nowrap;
+
+        &:hover {
+          background: #ffe8cc;
+          transform: translateY(-1px);
+        }
+
+        &.active {
+          background: #1a1a1a;
+          color: #fff;
+          border-color: #1a1a1a;
+        }
+      }
+    }
+  }
+
+  .query-input-form {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+
+    .paper-input-field {
+      flex: 1;
+      height: 38px;
+      padding: 0 12px;
+      background: #fff;
+      border: 1.8px solid #1a1a1a;
+      border-radius: 6px;
+      font-family: 'Inter', sans-serif;
+      font-size: 12.5px;
+      color: #1a1a1a;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+      &:focus {
+        border-color: #d97706;
+        box-shadow: 0 0 0 2px rgba(217, 119, 6, 0.2);
+      }
+    }
+
+    .paper-send-btn {
+      height: 38px;
+      padding: 0 16px;
+      background: #1a1a1a;
+      color: #fff;
+      border: 1.8px solid #1a1a1a;
+      border-radius: 6px;
+      font-family: 'Cabin Sketch', cursive, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      box-shadow: 0 2px 0 #000;
+
+      &:hover {
+        background: #d97706;
+        border-color: #b45309;
+        transform: translateY(-1px);
+      }
+
+      &:active {
+        transform: translateY(1px);
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 2. TWO TRUTHS & ONE LIE STATION
+// -----------------------------------------------------------------------------
+.game-station-card {
+  width: 580px;
+  min-height: 460px;
+  max-height: 520px;
+  background: #faf8f5;
+  background-image: 
+    radial-gradient(#e8e1d5 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(247, 243, 235, 0.95));
+  background-size: 20px 20px, 100% 100%;
+  border: 2.5px solid #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 6px 0 #1a1a1a, 0 12px 28px rgba(0, 0, 0, 0.18);
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1a1a1a;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &.focused {
+    box-shadow: 0 8px 0 #1a1a1a, 0 16px 36px rgba(0, 0, 0, 0.24);
+  }
+
+  .game-station-header {
+    padding-bottom: 10px;
+    border-bottom: 2px dashed #d1c7b7;
+
+    .game-header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .station-badge {
+        font-family: 'Cabin Sketch', cursive, sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        color: #8b5e34;
+      }
+
+      .game-score-badge {
+        background: #1a1a1a;
+        color: #fef3c7;
+        font-family: 'Cabin Sketch', cursive, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 3px 8px;
+        border-radius: 4px;
+        letter-spacing: 1px;
+      }
+    }
+
+    .game-title {
+      margin: 4px 0 0 0;
+      font-family: 'Cabin Sketch', cursive, sans-serif;
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #111;
+      line-height: 1.1;
+    }
+
+    .game-subtitle {
+      margin: 2px 0 0 0;
+      font-size: 11.5px;
+      color: #665c49;
+    }
+  }
+
+  .game-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+    .round-theme-banner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+
+      .theme-pill {
+        font-family: 'Cabin Sketch', cursive, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        color: #92400e;
+        background: #fed7aa;
+        padding: 2px 8px;
+        border: 1px solid #ea580c;
+        border-radius: 4px;
+      }
+
+      .tagline-text {
+        font-size: 11.5px;
+        color: #4b5563;
+        font-style: italic;
+      }
+    }
+
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+
+      .option-card {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-align: left;
+        background: #fffdfa;
+        border: 1.8px solid #1a1a1a;
+        border-radius: 8px;
+        padding: 8px 12px;
+        cursor: pointer;
+        transition: all 0.18s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        box-shadow: 0 2px 0 #1a1a1a;
+
+        &:hover:not(:disabled) {
+          background: #fff8eb;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 0 #1a1a1a;
+        }
+
+        .option-letter {
+          width: 26px;
+          height: 26px;
+          background: #1a1a1a;
+          color: #fff;
+          font-family: 'Cabin Sketch', cursive, sans-serif;
+          font-size: 14px;
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          flex-shrink: 0;
+        }
+
+        .option-text {
+          flex: 1;
+          font-size: 12px;
+          line-height: 1.4;
+          color: #1f2937;
+        }
+
+        .stamp {
+          position: absolute;
+          right: 12px;
+          font-family: 'Cabin Sketch', cursive, sans-serif;
+          font-size: 13px;
+          font-weight: 700;
+          letter-spacing: 0.5px;
+          padding: 2px 8px;
+          border-radius: 4px;
+          transform: rotate(-3deg);
+          animation: stampPop 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+          &.lie-stamp {
+            color: #065f46;
+            background: #d1fae5;
+            border: 2px solid #059669;
+          }
+
+          &.truth-stamp {
+            color: #991b1b;
+            background: #fee2e2;
+            border: 2px solid #dc2626;
+          }
+        }
+
+        &.is-the-lie {
+          border-color: #059669;
+          background: #ecfdf5;
+          box-shadow: 0 2px 0 #059669;
+        }
+
+        &.picked-wrong {
+          border-color: #dc2626;
+          background: #fef2f2;
+          box-shadow: 0 2px 0 #dc2626;
+        }
+
+        &.is-truth {
+          opacity: 0.82;
+        }
+      }
+    }
+
+    .reveal-explanation-box {
+      margin-top: 10px;
+      padding: 10px 14px;
+      background: #fbf7ee;
+      border: 1.8px solid #1a1a1a;
+      border-radius: 8px;
+      box-shadow: 0 3px 0 #1a1a1a;
+      animation: fadeIn 0.3s ease;
+
+      .explanation-title {
+        font-family: 'Cabin Sketch', cursive, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 4px;
+
+        .correct-label {
+          color: #047857;
+        }
+
+        .incorrect-label {
+          color: #b91c1c;
+        }
+      }
+
+      .explanation-body {
+        margin: 0;
+        font-size: 11.5px;
+        line-height: 1.45;
+        color: #374151;
+      }
+
+      .next-round-btn {
+        margin-top: 8px;
+        width: 100%;
+        height: 32px;
+        background: #1a1a1a;
+        color: #fff;
+        border: 1.5px solid #1a1a1a;
+        border-radius: 6px;
+        font-family: 'Cabin Sketch', cursive, sans-serif;
+        font-size: 13.5px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        transition: all 0.15s ease;
+
+        &:hover {
+          background: #ea580c;
+          border-color: #c2410c;
+        }
+      }
+    }
+  }
+
+  .game-over-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+    animation: fadeIn 0.4s ease;
+
+    .victory-icon {
+      font-size: 40px;
+      margin-bottom: 4px;
+    }
+
+    .game-over-title {
+      font-family: 'Cabin Sketch', cursive, sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      margin: 0;
+      color: #111;
+    }
+
+    .final-score-pill {
+      margin-top: 6px;
+      background: #1a1a1a;
+      color: #fef08a;
+      font-family: 'Cabin Sketch', cursive, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 1px;
+    }
+
+    .rank-display {
+      margin-top: 14px;
+      background: #fffdfa;
+      border: 1.8px solid #1a1a1a;
+      border-radius: 8px;
+      padding: 12px 18px;
+      box-shadow: 0 3px 0 #1a1a1a;
+      max-width: 420px;
+
+      .rank-title {
+        font-family: 'Cabin Sketch', cursive, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: #d97706;
+      }
+
+      .rank-desc {
+        margin: 4px 0 0 0;
+        font-size: 12px;
+        color: #4b5563;
+        line-height: 1.4;
+      }
+    }
+
+    .play-again-btn {
+      margin-top: 16px;
+      height: 38px;
+      padding: 0 24px;
+      background: #1a1a1a;
+      color: #fff;
+      border: 1.8px solid #1a1a1a;
+      border-radius: 8px;
+      font-family: 'Cabin Sketch', cursive, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      box-shadow: 0 3px 0 #000;
+
+      &:hover {
+        background: #059669;
+        border-color: #047857;
+        transform: translateY(-1px);
+      }
+    }
+  }
+}
+
+@keyframes stampPop {
+  0% { transform: scale(0.6) rotate(-10deg); opacity: 0; }
+  100% { transform: scale(1) rotate(-3deg); opacity: 1; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+

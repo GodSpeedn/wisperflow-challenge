@@ -1,0 +1,105 @@
+.story-pills-bar {
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 45;
+    pointer-events: auto;
+    animation: storyPillsFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    max-width: 95vw;
+
+    .pills-container {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        background:
+            linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+            url('/textures/paper-texture.webp') center center;
+        background-size: cover;
+        backdrop-filter: blur(12px);
+        padding: 6px 8px;
+        border: 1.5px solid #1a1a1a;
+        border-radius: 999px;
+        box-shadow:
+            0 4px 0 rgba(0, 0, 0, 0.9),
+            0 12px 28px rgba(0, 0, 0, 0.15);
+        overflow-x: auto;
+        scrollbar-width: none; // Firefox
+        -webkit-overflow-scrolling: touch;
+
+        &::-webkit-scrollbar {
+            display: none; // Chrome/Safari
+        }
+    }
+
+    .story-pill-btn {
+        display: flex;
+        align-items: center;
+        padding: 7px 14px;
+        background: transparent;
+        border: 1.5px solid transparent;
+        border-radius: 999px;
+        font-family: 'Cabin Sketch', cursive, sans-serif;
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: #333333;
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        white-space: nowrap;
+
+        .pill-name {
+            letter-spacing: 0.4px;
+        }
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.05);
+            color: #000000;
+            transform: translateY(-1px);
+        }
+
+        &.active {
+            background: #1a1a1a;
+            color: #ffffff;
+            border-color: #1a1a1a;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+            transform: translateY(0);
+
+            .pill-name {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+@keyframes storyPillsFadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 15px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    .story-pills-bar {
+        bottom: 20px;
+        width: 95%;
+
+        .pills-container {
+            padding: 5px 6px;
+            gap: 4px;
+        }
+
+        .story-pill-btn {
+            padding: 6px 10px;
+            font-size: 0.85rem;
+
+            .pill-name {
+                font-size: 0.82rem;
+            }
+        }
+    }
+}
+

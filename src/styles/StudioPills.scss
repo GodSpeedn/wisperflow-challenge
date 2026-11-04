@@ -1,0 +1,141 @@
+.studio-pills-bar {
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 45;
+    pointer-events: auto;
+    animation: studioPillsFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+
+    .pills-container {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        background:
+            linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+            url('/textures/paper-texture.webp') center center;
+        background-size: cover;
+        backdrop-filter: blur(12px);
+        padding: 6px 12px;
+        border: 1.5px solid #1a1a1a;
+        border-radius: 999px;
+        box-shadow:
+            0 4px 0 rgba(0, 0, 0, 0.9),
+            0 12px 28px rgba(0, 0, 0, 0.15);
+    }
+
+    .studio-pill-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 18px;
+        background: transparent;
+        border: 1.5px solid transparent;
+        border-radius: 999px;
+        font-family: 'Cabin Sketch', cursive, sans-serif;
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: #333333;
+        cursor: pointer;
+        transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+
+        .pill-icon {
+            font-size: 1.15rem;
+            line-height: 1;
+        }
+
+        .pill-name {
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+
+        .pill-count {
+            font-size: 0.88rem;
+            color: #777777;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.06);
+            color: #000000;
+            transform: translateY(-1px);
+
+            .pill-count {
+                color: #222222;
+            }
+        }
+
+        &.active {
+            background: #1a1a1a;
+            color: #ffffff;
+            border-color: #1a1a1a;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+            transform: translateY(0);
+
+            .pill-name {
+                color: #ffffff;
+            }
+
+            .pill-icon {
+                filter: brightness(1.2);
+            }
+
+            .pill-count {
+                color: #e8c872; // Warm amber count badge on active
+            }
+        }
+    }
+
+    .pills-hint {
+        font-family: 'Cabin Sketch', cursive, sans-serif;
+        font-size: 0.88rem;
+        color: #777777;
+        padding-left: 6px;
+        padding-right: 4px;
+        user-select: none;
+        letter-spacing: 0.5px;
+    }
+}
+
+@keyframes studioPillsFadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 15px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+@media (max-width: 680px) {
+    .studio-pills-bar {
+        bottom: 20px;
+        width: 94%;
+
+        .pills-container {
+            justify-content: center;
+            gap: 4px;
+            padding: 5px 6px;
+        }
+
+        .studio-pill-btn {
+            padding: 7px 11px;
+            font-size: 0.88rem;
+            gap: 5px;
+
+            .pill-name {
+                font-size: 0.85rem;
+            }
+
+            .pill-count {
+                font-size: 0.78rem;
+            }
+        }
+
+        .pills-hint {
+            display: none;
+        }
+    }
+}
