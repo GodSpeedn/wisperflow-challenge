@@ -380,7 +380,7 @@ export default function LandingWallModals() {
               {/* Responsive Video Player */}
               <div className="modal-video-container">
                 <iframe
-                  src={videoPitch?.embedUrl || 'https://www.youtube.com/embed/dQw4w9WgXcQ'}
+                  src={videoPitch?.embedUrl || 'https://www.youtube.com/embed/jap14OtuWL4'}
                   title={videoPitch?.title || 'Pitch Video'}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
